@@ -90,8 +90,18 @@ function timeUp() {
     console.log('timeout')
     clearInterval(tOut);
     clearInterval(trans);
-    $('#triv-container').html('<h1>Times Up!</h1>')
-    x++;
+    if (x === 0 || x === 6 || x === 9) {
+        $('#triv-container').html('<h1 id=notimeorwrong>Times Up!</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer2 incorrectanswer">' + answers[0] + '</p>')
+    }
+    if (x === 5) {
+        $('#triv-container').html('<h1 id=notimeorwrong>Times Up!</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer2 incorrectanswer">' + answers[1] + '</p>')
+    }
+    if (x === 1 || x === 4 || x === 8 || x === 10) {
+        $('#triv-container').html('<h1 id=notimeorwrong>Times Up!</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer2 incorrectanswer">' + answers[2] + '</p>')
+    }
+    if (x === 2 || x === 3 || x === 7) {
+        $('#triv-container').html('<h1 id=notimeorwrong>Times Up!</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer2 incorrectanswer">' + answers[3] + '</p>')
+    }    x++;
     unansweredA++;
     setTimeout(trivia, 4000)
 }
@@ -104,16 +114,16 @@ function right() {
 }
 function wrong() {
     if (x === 0 || x === 6 || x === 9) {
-        $('#triv-container').html('<h1>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[0] + '</p>')
+        $('#triv-container').html('<h1 id=notimeorwrong>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[0] + '</p>')
     }
     if (x === 5) {
-        $('#triv-container').html('<h1>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[1] + '</p>')
+        $('#triv-container').html('<h1 id=notimeorwrong>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[1] + '</p>')
     }
     if (x === 1 || x === 4 || x === 8 || x === 10) {
-        $('#triv-container').html('<h1>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[2] + '</p>')
+        $('#triv-container').html('<h1 id=notimeorwrong>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[2] + '</p>')
     }
     if (x === 2 || x === 3 || x === 7) {
-        $('#triv-container').html('<h1>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[3] + '</p>')
+        $('#triv-container').html('<h1 id=notimeorwrong>INCORRECT</h1><p class = "incorrectanswer">Correct Answer Is:</p>' + '<p class = "incorrectanswer">' + answers[3] + '</p>')
     }
 
     x++;
