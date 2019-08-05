@@ -1,23 +1,39 @@
 body {
     background-image: url(../images/background.jpg);    
 }
-#startbtn {
+#startbtn, #end-button {
     background-color: aquamarine; 
     font-size: 48px;
     font-family: fantasy;   
     margin-top: 15%;
 }
+#end-button {
+    width: 50%; 
+    font-size: 30px;
+    margin:auto;
+}
+#end-button:hover {
+    background-color: orange;
+}
 #content-container {
     text-align: center;
     margin: auto;
     width: 50%;
-    height: 500px;
+    height: 530px;
     background-color: gray;
     padding-top: 50px;
     margin-top: 75px;
     background-image: url(../images/content-background.jpg);    
 }
-ul {
+img {
+    width: 30%;
+    object-fit: fill;
+    margin: auto;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.ques {
     width: 25%;
     background-color: white;
     margin:auto;
@@ -49,12 +65,8 @@ border-radius: 15px;
    
 
 }
-.incorrectanswer2 {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding-top: 5px;
-}
-ul:hover {
+
+.ques:hover {
     background-color: orange;
 }
 #maintitle {
@@ -64,4 +76,18 @@ margin:auto;
 border-radius: 15px;
 margin-bottom: 2%;
 font-size: 60px;
+}
+#timer {
+    color:wheat;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.scores {
+    width: 40%;
+    background-color: white;
+    margin:auto;
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 30px;
+    border-radius: 15px;
 }
