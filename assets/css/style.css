@@ -1,20 +1,35 @@
 body {
     background-image: url(../images/background.jpg);    
 }
+/* 00's cartoon trivia */
+#maintitle {
+    width: 55%;
+    background-color: white;
+    margin:auto;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    font-size: 60px;
+}
+
+/* Buttons */
 #startbtn, #end-button {
     background-color: aquamarine; 
     font-size: 48px;
     font-family: fantasy;   
     margin-top: 15%;
 }
+
 #end-button {
     width: 50%; 
     font-size: 30px;
     margin:auto;
 }
+
 #end-button:hover {
     background-color: orange;
 }
+
+/* Content holder */
 #content-container {
     text-align: center;
     margin: auto;
@@ -25,14 +40,17 @@ body {
     margin-top: 75px;
     background-image: url(../images/content-background.jpg);    
 }
+
+/* Images */
 img {
     width: 30%;
     object-fit: fill;
     margin: auto;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    
 }
+
+/* questions */
 .ques {
     width: 25%;
     background-color: white;
@@ -41,14 +59,20 @@ img {
     margin-bottom: 10px;
     font-size: 30px;
     border-radius: 15px;
+}
 
+.ques:hover {
+    background-color: orange;
 }
+
 #question {
-width: 50%;
-background-color: white;
-margin:auto;
-border-radius: 15px;
+    background-color: white;
+    margin:auto;
+    border-radius: 15px;
+    width: 50%;
 }
+
+/* Middle messages */
 #notimeorwrong {
     width: 30%;
     font-size: 40px;
@@ -57,31 +81,22 @@ border-radius: 15px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .incorrectanswer {
     font-size: 24px;
     background-color: white;
     width: 30%;
     margin:auto;    
-   
-
 }
 
-.ques:hover {
-    background-color: orange;
-}
-#maintitle {
-width: 55%;
-background-color: white;
-margin:auto;
-border-radius: 15px;
-margin-bottom: 2%;
-font-size: 60px;
-}
+/* timer */
 #timer {
     color:wheat;
     font-size: 24px;
     font-weight: bolder;
 }
+
+/* endscreen */
 .scores {
     width: 40%;
     background-color: white;
